@@ -45,7 +45,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/var1"
-                    android:textColor="@color/text1" />
+                    android:textColor="@color/text1"
+                    android:onClick="onClick"/>
 
                 <Button
                     android:id="@+id/button10"
