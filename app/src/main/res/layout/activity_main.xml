@@ -6,13 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="215dp"
+        android:layout_height="279dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="218dp"
+        android:layout_height="337dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="301dp"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="194dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="1dp">
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
