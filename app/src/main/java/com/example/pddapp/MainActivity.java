@@ -28,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
         initUI();
         textView.setText(R.string.var1);
 
+
     }
     private void initUI (){
         textView = findViewById(R.id.textView4);
         button = findViewById(R.id.button11);
-
+        imageView = findViewById(R.id.imageView);
     }
     public void onClick(View view) {
         Intent intent =new Intent(this,SecondActivity.class);
