@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">PDDApp</string>
+    <string name="var1">Вариант 1</string>
+    <string name="var2">Вариант 2</string>
+    <string name="var3">Вариант 3</string>
+    <string name="var4">Вариант 4</string>
+    <string name="var5">Вариант 5</string>
+    <string name="var6">Вариант 6</string>
+    <string name="varchose_1">Выберите вариант билета</string>
+    <string name="varchose_2">Выберите вариант экзамена</string>
+
 </resources>

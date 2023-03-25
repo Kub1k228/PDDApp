@@ -4,28 +4,222 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="215dp"
-        android:layout_height="279dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="1dp">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="412dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/varchose_1"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:scrollbars="none"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="VisualLintBounds">
+
+                <Button
+                    android:id="@+id/button11"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/var1"
+                    android:textColor="@android:color/holo_blue_light" />
+
+                <Button
+                    android:id="@+id/button10"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/var2"
+                    android:textColor="@android:color/holo_blue_light"
+                    app:iconTint="@color/black" />
+
+                <Button
+                    android:id="@+id/button9"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/var3"
+                    android:textColor="@android:color/holo_blue_light" />
+
+                <Button
+                    android:id="@+id/button8"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/var4"
+                    android:textColor="@android:color/holo_blue_light" />
+
+                <Button
+                    android:id="@+id/button7"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/var5"
+                    android:textColor="@android:color/holo_blue_light" />
+
+                <Button
+                    android:id="@+id/button6"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/var6"
+                    android:textColor="@android:color/holo_blue_light" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="218dp"
-        android:layout_height="337dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="301dp"></LinearLayout>
+        android:layout_width="411dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="38dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-    <RelativeLayout
-        android:layout_width="194dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="1dp">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/varchose_2"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark" />
 
-    </RelativeLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="VisualLintBounds">
+
+                <Button
+                    android:id="@+id/button20"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/var1"
+                    android:textColor="@android:color/holo_blue_light" />
+
+                <Button
+                    android:id="@+id/button19"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/var2"
+                    android:textColor="@android:color/holo_blue_light" />
+
+                <Button
+                    android:id="@+id/button18"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/var3"
+                    android:textColor="@android:color/holo_blue_light" />
+
+                <Button
+                    android:id="@+id/button17"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/var4"
+                    android:textColor="@android:color/holo_blue_light"
+                    tools:layout_editor_absoluteX="-42dp"
+                    tools:layout_editor_absoluteY="424dp" />
+
+                <Button
+                    android:id="@+id/button15"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/var5"
+                    android:textColor="@android:color/holo_blue_light" />
+
+                <Button
+                    android:id="@+id/button16"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/var6"
+                    android:textColor="@android:color/holo_blue_light" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="205dp"
+        android:layout_height="407dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+                android:layout_width="146dp"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:progress="50"
+                android:progressTint="@color/teal_200" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
