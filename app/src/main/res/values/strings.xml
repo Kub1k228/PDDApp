@@ -8,5 +8,7 @@
     <string name="var6">Вариант 6</string>
     <string name="varchose_1">Выберите вариант билета</string>
     <string name="varchose_2">Выберите вариант экзамена</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
