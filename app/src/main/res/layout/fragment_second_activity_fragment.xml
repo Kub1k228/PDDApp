@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Question"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SecondActivity_fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,15 +13,143 @@
 
         <Button
             android:id="@+id/button"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            android:contentDescription="@android:string/emptyPhoneNumber"
+            android:onClick="onClick"
             app:icon="@android:drawable/btn_dialog"
             app:iconTint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="49dp"
-            android:layout_height="49dp"
-            android:contentDescription="@android:string/emptyPhoneNumber"
-            android:onClick="onClick"
             tools:layout_editor_absoluteX="360dp"
             tools:layout_editor_absoluteY="4dp" />
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="863dp"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            tools:ignore="VisualLintBounds">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/QuestButton1"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textSize="20sp"
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        android:id="@+id/QuestButton2"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="2"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/QuestButton3"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="3"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/QuestButton4"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="4"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/QuestButton5"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="5"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/QuestButton6"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="6"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/QuestButton7"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="7"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/QuestButton8"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="8"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/QuesImg"
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:src="@drawable/nofotoansw" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quest1" />
+
+            <Button
+                android:id="@+id/Asnw1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answ1_q1" />
+
+            <Button
+                android:id="@+id/Answ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answ2_q1" />
+
+            <Button
+                android:id="@+id/Asnw3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answ3_q1" />
+
+            <Button
+                android:id="@+id/Asnw4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answ4_q1"/>
+
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

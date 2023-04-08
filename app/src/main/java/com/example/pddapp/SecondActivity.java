@@ -14,8 +14,6 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        Bundle arguments = getIntent().getExtras();
-        String name = arguments.get("var_number").toString();
 
 
     }

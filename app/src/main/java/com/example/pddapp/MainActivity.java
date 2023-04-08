@@ -37,20 +37,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClick(View view) {
         Intent intent =new Intent(this,SecondActivity.class);
-        intent.putExtra("var_number", "1");
         startActivity(intent);
 
     }
-    ActivityResultLauncher<Intent> mStartForResult = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
-                    Bundle arguments = getIntent().getExtras();
-                    String name = arguments.get("Result").toString();
-                }
-            }
-    );
+
+
 
 
 
