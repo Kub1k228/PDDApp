@@ -16,7 +16,7 @@ public class SecondActivity extends AppCompatActivity {
 
     @Override
     /**default onCreate get info from first page
-     * @param savedInstanceState - info from bundlea*/
+     * @param savedInstanceState - info from bundle*/
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
