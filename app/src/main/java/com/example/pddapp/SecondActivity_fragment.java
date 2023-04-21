@@ -14,6 +14,8 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  * Use the {@link SecondActivity_fragment#newInstance} factory method to
  * create an instance of this fragment.
+ * @author ivanluppov
+ * @version 1.0
  */
 public class SecondActivity_fragment extends Fragment {
 
@@ -48,6 +50,10 @@ public class SecondActivity_fragment extends Fragment {
         return fragment;
     }
 
+    /**
+     * @param savedInstanceState If the fragment is being re-created from
+     *                           a previous saved state, this is the state.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +62,10 @@ public class SecondActivity_fragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         getParentFragmentManager().setFragmentResultListener("requestKey", this, new FragmentResultListener() {
+            /**
+             * @param requestKey key used to store the result
+             * @param result     result passed to the callback
+             */
             @Override
             public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
                 String var_number  = result.getString("var_number");

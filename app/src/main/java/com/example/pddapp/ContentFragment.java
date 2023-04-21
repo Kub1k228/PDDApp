@@ -8,12 +8,28 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentResultListener;
-
+/**
+ * Contentfragment class for main page
+ * @author Luppov
+ * @version 1.0
+ * */
 public class ContentFragment extends Fragment {
+
     private static final String TAG = "fragment";
+
+
+    /**
+     * init content fragment
+     */
     public ContentFragment(){
         super(R.layout.fragment_1_context);
     }
+
+    /**
+     * @return info to logcat
+     * @param savedInstanceState If the fragment is being re-created from
+     *                           a previous saved state, this is the state.
+     */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(TAG,"On create");
@@ -21,6 +37,10 @@ public class ContentFragment extends Fragment {
 
 
 }
+
+    /**
+     * Info to logcat whe createWiew
+     */
     public void onCreateView() {
 
         Log.i(TAG, "on create view: ");
@@ -45,6 +65,9 @@ public class ContentFragment extends Fragment {
     }
 
 
+    /**
+     * return info when stop
+     */
     public void onStop() {
         super.onStop();
         Log.i(TAG, "onStop: ");
